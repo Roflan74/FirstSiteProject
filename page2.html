@@ -1,0 +1,83 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бьёрн Страуструп</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="img/journal-code.svg" alt="Logo" width="64px">
+            <h1>Бьёрн Страуструп</h1>
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">На главную</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>C++</h2>
+            <time datetime="2024-10-08">8 октября 2024 г.</time>
+        </section>
+
+        <section class="contents">
+            <img class="photo" src="img/ISO_C++_Logo.svg" alt="C++ LOGO" width="100px">
+            <p class="first-line"><strong><em>Бьёрн Страуструп разработал язык программирования C++.</strong></em> Он поддерживает объектно-ориентированное программирование.</p>
+            <p>Первая версия языка называлась «C с классами» и была разработана в рамках работы на компанию AT&T</p>
+            <p>Страуструп разработал C++ с целью написания эффективных и элегантных программ вместо выбора между эффективностью и элегантностью.</p>
+            <p>Страуструп стал первопроходцем в области использования объектно-ориентированной и обобщённой парадигм программирования в области создания программных приложений, где эффективность является приоритетным свойством, таких как симуляторы, графика, пользовательские интерфейсы, прикладные системы, системы для научных вычислений.</p>
+
+            <h3>Особенности языка</h3>
+            <ul>
+                <li>1. Стандарт C++ состоит из двух основных частей: описание ядра языка и описание стандартной библиотеки.</li>
+                <li>2. Синтаксис C++ унаследован от языка Си.</li>
+                <li>3. Компилируемый, статически типизированный язык программирования общего назначения.</li>
+            </ul>
+
+            <h3>Пример кода</h3>
+            <pre><code>class Array {
+public:
+	Array() = default; // компилятор создаст конструктор по умолчанию сам
+	Array(size_t _len) :
+			len(_len) {
+		val = new double[_len];
+	}
+	Array(const Array & a) = delete;  // конструктор копирования явно удалён
+	Array(Array && a); // конструктор перемещения
+	~Array() {
+		delete[] val;
+	}
+	Array& operator=(const Array& rhs); // оператор присваивания копированием
+	Array& operator=(Array&& rhs); // оператор присваивания перемещением
+	double& operator[](size_t i) {
+		return val[i];
+	}
+	const double& operator[](size_t i) const {
+		return val[i];
+	}
+
+protected:
+	std::size_t len = 0; // инициализация поля
+	double* val {nullptr};
+};</code></pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Подшивалов Андрей, 2024</p>
+        <p>Вы также можете найти меня <a href="https://midis.ru" target="_blank">здесь</a> </p>
+        <a href="tel:78005553535">+78005553535</a>
+        <a href="mailto:theBestMail@mail.ru">theBestMail@mail.ru</a>
+        <p style="padding-top: 20px;;"><a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D0%B0%D1%83%D1%81%D1%82%D1%80%D1%83%D0%BF,_%D0%91%D1%8C%D1%91%D1%80%D0%BD"><img src="img/wikipedia.svg" alt="Wiki logo" width="32px"></a></p>
+    </footer>
+</body>
+</html>

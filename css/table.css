@@ -1,0 +1,54 @@
+.table-price {
+    /* border: 5px blue solid; */
+    border-collapse: collapse;
+}
+
+.table-price td,
+.table-price th {
+    border-bottom: 3px red solid;
+    padding: 10px 20px;
+}
+
+.table-price td:nth-child(3) {
+    color: green;
+    font-weight: bold;
+}
+
+.table-price tr:nth-child(odd) {
+    background-color: aqua;
+    border-bottom: 1px black solid;
+}
+
+.table-price tr:nth-child(odd) td {
+    border-bottom: 1px black solid;
+}
+
+#forma {
+    width: 300px;
+    margin: 20px auto;
+}
+
+#forma input[type="submit"] {
+    background-color: greenyellow;
+    border: 1px green solid;
+    padding: 5px 15px;
+    color: black;
+    border-radius: 5px;
+}
+
+#forma input[type="submit"]:hover {
+    background-color: rgb(113, 175, 20);
+
+}
+
+#forma input[type="email"],
+#forma input[type="password"] {
+    background-color: aquamarine;
+    border: none;
+    border-bottom: 1px black solid;
+}
+
+#forma input[type="email"]:hover,
+#forma input[type="password"]:hover {
+    background-color: rgb(29, 241, 171);
+}
