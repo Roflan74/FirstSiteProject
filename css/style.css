@@ -177,3 +177,66 @@ p + .photo {
     ;
     border-bottom: 1px black solid;
 }
+
+#contact-form input[type="text"]{
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #63ADD0;
+}
+
+#contact-form input[type="email"]{
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #63ADD0;
+}
+
+#contact-form textarea{
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #63ADD0;
+}
+
+#contact-form select{
+    height: 30px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #63ADD0;
+}
+
+#contact-form input[type="submit"]{
+    height: 40px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #3CA0D0;
+}
+
+#contact-form input[type="submit"]:hover{
+    height: 40px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #63ADD0;
+}
+
+#contact-form input[type="tel"]{
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #63ADD0;
+}
